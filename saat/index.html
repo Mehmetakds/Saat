@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<script type="text/javascript">
+
+function clock() {
+
+
+    var saat = document.getElementById('saat');
+    var dakika = document.getElementById('dakika');
+    var saniye = document.getElementById('saniye');
+
+    var s = new Date().getHours();
+    var d = new Date().getMinutes();
+    var ss = new Date().getSeconds();
+
+    saat.innerHTML = s;
+    dakika.innerHTML = d;
+    saniye.innerHTML = ss;
+}
+    var interval = setInterval(clock, 100);
+
+</script>
+
+<body>
+
+    <div id="clock">
+        <div id="time">
+            <div><span id="saat">00</span>Saat</div>
+            <div><span id="dakika">00</span>Dakika</div>
+            <div><span id="saniye">00</span>Saniye</div>
+        </div>
+    </div>
+    
+</body>
+</html>
